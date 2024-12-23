@@ -8,7 +8,11 @@
 #print(f'ใช้กระเบื้องทั้งหมด: {total_row} แผ่น',f'เหลือเศษหระเบื้อง: {remain_tile} แผ่น',f'ต้องซื้อเพิ่ม : {buy_more} แผ่น')
 #print('ต้องปูกระเบื้อง {} แถว'.format(total_row))
 #ลูกค้าต้องซื้อกระเบื้องเพิ่มกี่แผ่น
-cat_color = {'black':100, 'white': 200,'brown':90}
+cat_color = {'black':100, 'white': 200,'brown':90,'grey':120}
+
+print('-------ราคาแมว-------')
+for c,t in cat_color.items():
+    print('สี: {} ราคา: {} '.format(c,t))
 try:
     price_cat = int(input('ป้อนราคาแมว: '))
     my_monney = int(input('ป้อนจำนวนเงินที่มี: '))#ต้องแปลงข้อมูลจากข้อความเป็นตัวเลข
@@ -27,6 +31,6 @@ print(f'ซื้อแมวได้ทั้งหมด: {number_cat} ตั
 print(f'ได้เงินทอน: {cash_back} บาท')
 
 
-
+print('-------END-------')
       
     
